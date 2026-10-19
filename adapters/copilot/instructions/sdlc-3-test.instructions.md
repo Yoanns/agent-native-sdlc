@@ -1,0 +1,15 @@
+---
+name: "SDLC stage 3 — Test"
+description: "Use when code needs verifying before human review, when fixing a bug, or when the user says 'write tests for this', 'make sure this works', 'verify before I look at it', 'the tests are failing', or changes AGENTS.md, a rule, or a hook and needs the eval suite run. Covers feedback loops, test-first bug fixing, visual verification, and continuous evals."
+---
+
+# SDLC stage 3 — Test
+
+Before doing any work in this stage, read `.sdlc/playbook/3-test.md`
+and follow it step by step.
+
+**Produces:** Passing tests, build, lint; green eval run when configuration changed
+
+**Gate:** Tests, build, lint, and evals pass. **Decided by:** Engineer.
+Stop at the gate and ask. Never approve on a human's behalf, and never
+start the next stage in the same turn as the request for approval.

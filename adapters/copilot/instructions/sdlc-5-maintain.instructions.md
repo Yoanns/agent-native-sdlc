@@ -1,0 +1,15 @@
+---
+name: "SDLC stage 5 — Maintain"
+description: "Use after a release, when investigating production signals, or when the user says 'why did this metric move', 'triage this alert', 'run the security scan', 'write the post-mortem', 'set up monitoring', or when a monitoring job wakes the agent with a metric outside its control band. Diagnoses within the tier the signal earns and promotes real findings into a new spec."
+---
+
+# SDLC stage 5 — Maintain
+
+Before doing any work in this stage, read `.sdlc/playbook/5-maintain.md`
+and follow it step by step.
+
+**Produces:** A finding with evidence, promoted to a new `.sdlc/<slug>/spec.md`
+
+**Gate:** Finding is real and worth acting on. **Decided by:** On-call engineer.
+Stop at the gate and ask. Never approve on a human's behalf, and never
+start the next stage in the same turn as the request for approval.
